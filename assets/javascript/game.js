@@ -1,4 +1,4 @@
-var DogBreeds = ["Labrador", "Golden Retriever", "German Shepard", "Doberman", "Chihuahua", "Bishon Frise", "Shih Tzu", "Pomeranian"];
+var DogBreeds = ["Labrador", "Golden Retriever", "German Shepard", "Doberman", "Pyrenees", "Chihuahua", "Bishon Frise", "Shih Tzu", "Pomeranian", "Cavalier King Charles Spaniel"];
     console.log(DogBreeds);
 
 
