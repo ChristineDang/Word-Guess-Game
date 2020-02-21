@@ -10,9 +10,19 @@ body{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
-    background-color: midnightblue;
+    background-color:midnightblue;
 }
 
+.content {
+    border: white;
+    font-size: 20px;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: 960px;
+    background-color: rgb(230, 230, 221);
+    color
+}
 
 html {
     scroll-behavior: smooth;
