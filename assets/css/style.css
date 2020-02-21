@@ -5,23 +5,31 @@ body{
     background-attachment: scroll;
 }
 
+h1 {
+    text-align: center;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100px;
+    font-weight: bolder; 
+}
+
 .jumbotron {
     text-align: center;
-    color: white;
+    color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
-    background-color:midnightblue;
+    background-color:rgba(227, 211, 185, 0.865);
 }
 
 .content {
-    border: white;
+    border: black;
+    border-style: double;
     font-size: 20px;
     text-align: center;
     margin: auto;
     height: auto;
     width: 960px;
-    background-color: rgb(230, 230, 221);
-    color
+    background-color: rgba(255, 255, 255, 0.961);
 }
 
 html {
