@@ -1,21 +1,3 @@
-
-//Defined arrays
-var dogBreeds = ["labrador", "golden retriever", "german shepard", "doberman", "pyrenees", "chihuahua", "bishon frise", "shih tzu", "pomeranian", "cavalier king charles spaniel"];
-    console.log(dogBreeds);
-
-var userAnswer = [];
-
-//word needs to be chosen at random at start of game
-//use ... DogBreeds.length, (math.floor(math.random()), for loop
-var chosenWord = dogBreeds[Math.floor(Math.random()*dogBreeds.length)]; 
-    console.log(chosenWord);
-
-
-//message
-// var html = "<p>Dog Breed: " + chosenWord + "</p>";
-// document.querySelector('#footer').innerHTML = html;
-
-
 //Defined arrays
 var dogBreeds = ["labrador", "goldenretriever", "germanshepard", "doberman", "pyrenees", 
 "chihuahua", "bishonfrise", "shihtzu", "pomeranian", "cavalierkingcharlesspaniel"];
