@@ -34,12 +34,12 @@ function continuum() {
 var k = 0;
 continuum();
 function reset() {
-    remainingAttempts = remainingCharacters +3;
+    remainingAttempts = remainingCharacters +4;
     Answer = [];
     incorrectguess = [];
     continuum();
 }
-var remainingAttempts = remainingCharacters +3;
+var remainingAttempts = remainingCharacters +4;
     console.log("remainingattempt: " + remainingAttempts);
     document.getElementById("attemptsleft").innerHTML = remainingAttempts;
 //Game loop (contains actions for user choices)
@@ -56,7 +56,7 @@ var remainingAttempts = remainingCharacters +3;
                 //if user repeats char guess, computer won't restate it
             if (chosenWord.includes(userGuess) == false){
                 incorrectguess[k] = userGuess;
-                console.log("we got here don't know why");
+                console.log("we are in the false statement");
                 k++;
                 remainingAttempts--;
                 console.log("remaining attempt: " + remainingAttempts);
@@ -65,7 +65,7 @@ var remainingAttempts = remainingCharacters +3;
                 console.log(incorrectguess)
             }
             else {
-                console.log("we are now out of if statement");
+                console.log("we are now in the else");
                 for (var j = 0; j< chosenWord.length; j++) {
                     if (userGuess === chosenWord[j]) {
                     Answer[j] = userGuess;
@@ -92,6 +92,7 @@ var remainingAttempts = remainingCharacters +3;
             console.log("wins: " + wins + " | losses: " + losses);
             reset();
         }
+        //I think the reset remaining attempts issue lies within this statement & not the function reset...
         else if (remainingAttempts <= 0) {
             // score.add("losses");
             losses++; 
@@ -101,5 +102,5 @@ var remainingAttempts = remainingCharacters +3;
         }
     }
 //+extra choices for attempts left. try making levels
-//code reset in JS once chosenWord completed
-//tally mark on wins & losses
+//NEED TO FIX "REMAINING ATTEMPTS LEFT" SO IT FULLY RESETS
+//ATTACH PHOTOS TO RANDOMIZED CHOSEN DOG BREEDS
