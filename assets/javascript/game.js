@@ -14,11 +14,7 @@ var losses = 0;
 //word needs to be chosen at random at start of game
 //use ... DogBreeds.length, (math.floor(math.random()), for loop
 function continuum() {
-
-
-
     //for loop 
-
         for (var i=0; i< chosenWord.length; i++) {
             Answer[i] = "_ ";
 
