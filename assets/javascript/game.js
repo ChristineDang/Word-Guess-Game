@@ -14,12 +14,11 @@ var losses = 0;
 //word needs to be chosen at random at start of game
 //use ... DogBreeds.length, (math.floor(math.random()), for loop
 function continuum() {
-    chosenWord = dogBreeds[Math.floor(Math.random()*dogBreeds.length)]; 
-        console.log(chosenWord);
+
 
 
     //for loop 
-    remainingCharacters = chosenWord.length;
+
         for (var i=0; i< chosenWord.length; i++) {
             Answer[i] = "_ ";
 
@@ -32,8 +31,10 @@ function continuum() {
 }
 
 var k = 0;
-continuum();
+reset();
 function reset() {
+    chosenWord = dogBreeds[Math.floor(Math.random()*dogBreeds.length)];
+    remainingCharacters = chosenWord.length;
     remainingAttempts = remainingCharacters +4;
     Answer = [];
     incorrectguess = [];
